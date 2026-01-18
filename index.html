@@ -2,22 +2,49 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Fondos de Pensiones - Gráficos</title>
+  <title>Fondos de Pensiones - Análisis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; padding: 30px; }
-    a { display: block; margin: 10px 0; font-size: 18px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f8f9fa;
+      color: #222;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 1200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 850px;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <h1>Fondos de Pensiones</h1>
-  <p>Visualizaciones interactivas:</p>
 
-  <a href="assets/graficos/indice_fondos_base_sep2002.html">
-    Índice histórico base Sep-2002 = 1
-  </a>
+  <h1>Análisis de Fondos de Pensiones en Chile</h1>
+  <p style="text-align:center;">
+    Rentabilidad real, acumulada e histórica — gráficos interactivos
+  </p>
 
-  <a href="assets/graficos/rentabilidad_acumulada_2021_2025.html">
-    Rentabilidad acumulada 2021–2025
-  </a>
+  <div class="card">
+    <h2>Rentabilidad Real Acumulada (2021–2025)</h2>
+    <iframe src="assets/graficos/rentabilidad_acumulada_2021_2025.html"></iframe>
+  </div>
+
+  <div class="card">
+    <h2>Rentabilidad Histórica Real (Índice base Sep-2002 = 1)</h2>
+    <iframe src="assets/graficos/indice_fondos_base_sep2002.html"></iframe>
+  </div>
+
 </body>
 </html>
